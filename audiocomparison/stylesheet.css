@@ -1,0 +1,31 @@
+h1 {
+    color: orangered;
+    font-size: 400%;
+    text-align: center;
+    
+}
+
+h2 {
+    color: orangered;
+    font-size: 110%;
+    text-align: center;
+    
+}
+.first{
+    font-size: 110%
+}
+
+.second{
+    font-size: 110%
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#intro {
+    background-image: url("https://images.pond5.com/white-grey-texture-abstract-background-footage-047845919_iconl.jpeg");
+}

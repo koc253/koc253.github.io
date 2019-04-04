@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'OCR A Std', monospace;
+}
+
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background: #CDC6C0;
+  color: #6B2B2B;
+}
+
+.container > section {
+  width: 50%;
+  height: 100%;
+  
+}
+
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.profile-image {
+  background: url('https://i.postimg.cc/tgBKr0Yq/logo.png') no-repeat bottom center;
+  background-size: 130% 90%;
+}
+
+
+.profile-image{
+  display: block;
+  width: 256px;
+  border-radius: 50%;
+
+}
+.profile-image:hover {
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: spin 2000ms linear infinite;  
+}
+
+
+/* Profile info section */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+
+}
+
+.logo {
+  margin-top: -335px;
+  max-width: 270px;
+  height: 300px;
+  margin-left: 15px;
+  background: url('https://i.postimg.cc/Gt6nMBmp/logo.png') no-repeat right center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.9);
+  animation:3s ease 0s normal forwards 1 fadein;
+  -webkit-animation:3s ease 0s normal forwards 1 fadein;
+  opacity:1
+}
+
+@keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
+
+@-webkit-keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
+
+.profession {
+  max-width: 500px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  line-height: 30px;
+  margin-left: 15px;
+  margin-top: 25px;
+  animation-delay: 700s;
+  animation-name: fadeIn;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+    
+    
+  animation:3s ease 0s normal forwards 1 fadein;
+  -webkit-animation:4s ease 0s normal forwards 1 fadeIn;
+  opacity:3
+}
+
+@keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
+
+@-webkit-keyframes fadein{
+    0%{opacity:0}
+    80%{opacity:0}
+    100%{opacity:1}
+}
+
+
+/* links section */
+.links {
+  margin-top: 35px;
+  margin-left: 15px;
+}
+
+.mail-link {
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+/* social links */
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links span {
+  display: inline-block;
+  width: 100px;
+  height: 24px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.youtube {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Fyoutube_icon.svg?alt=media&token=1b70aa55-9bf7-4013-8f3b-94d1b76b5697');
+}
+
+.twitter {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Ftwitter_icon.svg?alt=media&token=d1030729-a4c8-4a44-abef-b7c022f6de7e');
+}
+
+.facebook {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Ffacebook_icon.svg?alt=media&token=30f80080-a68b-41d7-8c67-cad7b33bf2f6');
+}
+
+.linkedin {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Flinkedin_icon.svg?alt=media&token=e050ebd7-c0a9-412c-ad13-1f01d0c0d81b');
+}
+
+.instagram {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/codepen-files.appspot.com/o/Simple_One_Page_Portfolio%2Finstagram_icon.svg?alt=media&token=852e7edd-ad9b-45fd-90b1-5f93f788d4a9');
+}
+
+
+/* YouTube Link */
+.youtube-link {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  margin-left: -90px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.youtube-link a {
+  text-decoration: none;  
+  color: #AAA;
+  display: inline-block;
+  padding: 10px;
+}
+
+
+@media(max-height: 400px) {
+  .youtube-link {
+    display: none;
+  }
+}

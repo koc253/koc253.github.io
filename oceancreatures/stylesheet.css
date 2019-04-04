@@ -1,0 +1,60 @@
+nav {
+    text-align: center;
+    background-color: black;
+    background: #466368;
+    background: linear-gradient(to right bottom, #648880, #293f50);
+    position: fixed;
+    width: 100%;
+    
+}
+
+nav li {
+    display: inline;
+    padding: 50px;
+}
+
+nav a {
+    color: white;
+    font-size: 25px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#SunlightZone {
+    background-color: azure;
+    height: 330px;
+    padding: 50px;
+    font-size: 17px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+}
+
+#TwilightZone {
+    background-color: lightskyblue;
+    height: 330px;
+    padding: 50px;
+    font-size: 17px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#MidnightZone {
+    background-color: cornflowerblue;
+    height: 350px;
+    padding: 50px;
+    font-size: 17px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#AbyssalZone{
+    background-color: royalblue;
+    height: 330px;
+    padding: 50px;
+    font-size: 17px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
