@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Calculator</title>
+    
+
+
+</head>
+<body>
+
+      <label>Square this number:
+        <input type="number" id="squareinputid" size="2">
+      </label>     
+      <button id="square-button">Calculate</button>
+     <p id="prompt"></p>
+     <p id="solution"></p>
+
+    
+
+      <script language="javascript">
+          
+          document.getElementById("square-button").addEventListener("click", squareNumber); 
+          
+          function squareNumber(){
+               document.getElementById("prompt").innerHTML = 'Square of ' + squareinputid.value + ' is:';
+	           var squareinput = document.getElementById('squareinputid').value;
+               var squareresult = document.getElementById('solution').innerHTML = squareinput * squareinput;
+               document.getElementById("solution").innerHTML = squareresult;
+
+	}
+      </script> 
+    
+
+      <label>Half this number:
+        <input type="number" id="halfinputid" size="2">
+      </label>
+      <button id="half-button">Calculate</button>
+      <br><br>
+      <p id="halfprompt"></p>
+      <p id="halfsolution"></p>
+    
+    
+    
+          <script language="javascript">
+          
+          document.getElementById("half-button").addEventListener("click", halfNumber); 
+          
+          function halfNumber(){
+               document.getElementById("halfprompt").innerHTML = 'Half of ' + halfinputid.value + ' is:';
+	           var halfinput = document.getElementById('halfinputid').value;
+               var halfresult = document.getElementById('halfsolution').innerHTML = halfinput * 0.5 ;
+               document.getElementById("halfsolution").innerHTML = halfresult;
+
+	}
+      </script> 
+    
+    
+    
+    
+    
+
+      <label>
+        Numerator:
+        <input type="number" id="percent1inputid" size="2">
+      </label>
+      <label>
+        Denominator:
+        <input type="number" id="percent2inputid" size="2">
+      </label>
+      <button id="percent-button">Calculate</button>
+      <br><br>
+    
+      <p id="percentprompt"></p>
+      <p id="percentsolution"></p>
+    
+    
+    
+         <script language="javascript">
+          
+          document.getElementById("percent-button").addEventListener("click", percentNumber); 
+          
+          function percentNumber(){
+               document.getElementById("percentprompt").innerHTML = percent1inputid.value + ' divided by '+ percent2inputid.value + ' in percentages is: ';
+	           var percentinput1 = document.getElementById('percent1inputid').value;
+               var percentinput2 = document.getElementById('percent2inputid').value;
+               var percentresult = document.getElementById('percentsolution').innerHTML = Math.round(percentinput1 / percentinput2 * '100' * 1000) / 1000+ '%';
+               document.getElementById("percentsolution").innerHTML = percentresult;
+
+	}
+      </script> 
+    
+    
+    
+    
+    
+
+      <label>Calculate area of circle with radius:
+      <input type="number" id="areainputid" size="2">
+      </label>
+      <button id="area-button">Calculate</button> 
+      <br><br>
+      <!-- <div id="solution"></div> -->
+    
+      <p id="areaprompt"></p>
+      <p id="areasolution"></p>
+    
+    
+    
+    
+    
+    
+    
+    
+        <script language="javascript">
+          
+          document.getElementById("area-button").addEventListener("click", areaNumber); 
+          
+          function areaNumber(){
+               document.getElementById("areaprompt").innerHTML = "The area for a circle with radius " + areainputid.value + ' is:';
+	           var areainput = document.getElementById('areainputid').value;
+               var arearesult = document.getElementById('areasolution').innerHTML = Math.round(areainput * areainput * Math.PI * 100) / 100;
+               document.getElementById("areasolution").innerHTML = arearesult;
+
+	}
+      </script>
+    
+    
+    
+    
+
+      <!-- <script src="script.js" type="text/javascript"></script> -->
+    
+    
+</body>
+</html>
+
